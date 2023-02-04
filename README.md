@@ -5,7 +5,7 @@ I build my reusable custom Tab Bar Controller\
 
 The usage is like the default UITabBarController in UIKit
 
-'''swift
+```swift
 
       class AppTabBarController: CustomTabBarController {
 
@@ -31,21 +31,21 @@ The usage is like the default UITabBarController in UIKit
       }
   
 
-'''
+```
 
 <img src="https://github.com/ahmed-yamany/CustomTabBarController/blob/main/images/Screenshot%202023-02-04%20at%205.30.21%20AM.png" width="300" height="400">
 
 
 you can change the size "width and height" of the tab bar, cornerRadius, background, or tintColor
 
-'''swift
+```swift
 
       tabBar.size = CGSize(width: 300, height: 60)
       tabBar.layer.cornerRadius = 30
       tabBar.backgroundColor = .systemCyan
       tintColor = .black
       
-'''
+```
 
 <img src="https://github.com/ahmed-yamany/CustomTabBarController/blob/main/images/Screenshot%202023-02-04%20at%205.37.00%20AM.png" width="300" height="400">
 
@@ -53,32 +53,32 @@ you can change the size "width and height" of the tab bar, cornerRadius, backgro
 you can change the layout of the tabBar by override layoutTabBar method
 and add padding from the bottom
 
-'''swift
+```swift
 
         override func layoutTabBar(_ tabBar: TabBar) {
             tabBar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             tabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         }
 
-'''
+```
 <img src="https://github.com/ahmed-yamany/CustomTabBarController/blob/main/images/Screenshot%202023-02-04%20at%205.46.24%20AM.png" width="300" height="400">
 
 or center it to the screen 😅 😂
 
-'''swift
+```swift
           
           override func layoutTabBar(_ tabBar: TabBar) {
               tabBar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
               tabBar.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
           }
 
-'''
+```
 
 <img src="https://github.com/ahmed-yamany/CustomTabBarController/blob/main/images/Screenshot%202023-02-04%20at%205.50.06%20AM.png" width="300" height="400">
 
 you can add a custom background view to the tabBar
 
-'''swift
+```swift
 
         let bview = BackgroundView()
         tabBar.addSubview(bview)
@@ -89,10 +89,10 @@ you can add a custom background view to the tabBar
         bview.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor).isActive = true
 
 
-'''
+```
 <img src="https://github.com/ahmed-yamany/CustomTabBarController/blob/main/images/Screenshot%202023-02-04%20at%205.56.15%20AM.png" width="300" height="400">
 
 
-I wish this helps some one 
-I wish you give me feedback
+I wish this helps some one\
+I wish you give me feedback\
 Thanks
