@@ -99,6 +99,7 @@ class CustomTabBarController: UIViewController {
         super.viewDidLoad()
         // DEFAULT screen width for width and 80 for height
         tabBar.size = CGSize(width: UIScreen.main.bounds.width, height: 80)
+        tabBar.backgroundColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
